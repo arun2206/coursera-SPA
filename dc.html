@@ -1,0 +1,24 @@
+<!doctype html>
+<!DOCTYPE html>
+<html ng-app="DIModule">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular JS - Digest Cycle</title>
+	</head>
+	<body>
+		<h1>Digest Cycle</h1>
+
+		<div ng-controller="DCController">
+
+			<button type="button" ng-click="showWatchersCount()">No of watchers</button>
+
+			<button type="button" ng-click="countOnce()">Count once</button>
+
+			<button type="button" ng-click="plusOnce()">Increment by 1</button>
+
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+		<script type="text/javascript" src="dc.js"></script>
+	</body>
+</html>

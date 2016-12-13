@@ -1,0 +1,33 @@
+<!doctype html>
+<!DOCTYPE html>
+<html ng-app="DIModule">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular JS - Interpolation</title>
+		<style type="text/css">
+	    /* To prevent displaying {{Variable}} before loading the actual values */
+			[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+			  display: none !important;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Interpolation</h1>
+
+		<div ng-controller="InterpolationController" ng-cloak>
+
+			<div ng-cloak>{{name}}</div>
+			<div ng-cloak>{{sayMsg()}}</div>
+			<br/>
+			<div>
+				<button ng-click="feedPet()">Feed Pet</button>
+				<br/> <br/>
+				<img ng-src="{{state}}.jpg"/>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+		<script type="text/javascript" src="interpolator.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<!DOCTYPE html>
+<html ng-app="DIModule">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular JS - Digest and Apply examples</title>
+	</head>
+	<body>
+		<h1>Dependency Injection</h1>
+
+		<div ng-controller="DAController">
+
+			<button ng-click="upCounter()">Inc Counter 1</button>
+			<div>Counter 1 : {{counter1}}</div>
+<!-- 
+			<button ng-click="incCounter2()">Inc Counter 2</button>
+			<div>Counter 2 : {{counter2}}</div> -->
+
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+		<script type="text/javascript" src="digest_apply.js"></script>
+	</body>
+</html>

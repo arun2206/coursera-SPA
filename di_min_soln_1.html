@@ -1,0 +1,24 @@
+<!doctype html>
+<!DOCTYPE html>
+<html ng-app="DIModule">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular JS - Dependency Injection</title>
+	</head>
+	<body>
+		<h1>Dependency Injection</h1>
+
+		<div ng-controller="DIController">
+
+			<input 
+				type="text" 
+				name="name" 
+				ng-model="name" 
+				ng-blur="upCase()">
+
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+		<script type="text/javascript" src="di_min_soln_1.js"></script>
+	</body>
+</html>
